@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="recipe_calories">%.0f calorias</string>
+
+    <string name="recipe_ingredients">%d ingredientes</string>
+    <string name="recipe_search_hint">Buscar Recetas</string>
+</resources>

@@ -1,0 +1,80 @@
+[versions]
+agp = "8.4.1"
+kotlin = "1.9.23"
+core-ktx = "1.13.1"
+junit = "4.13.2"
+lifecycle = "2.8.0"
+activity-compose = "1.9.0"
+appcompat = "1.6.1"
+material = "1.12.0"
+retrofit = "2.9.0"
+okhttp3-interceptor = "4.5.0"
+dagger = "2.49"
+navigation = "2.7.7"
+compose = "1.6.7"
+constraints = "1.0.1"
+accompanist = "0.35.0-alpha"
+material3 = "1.2.1"
+lottie = "6.2.0"
+coroutine = "1.7.3"
+collection = "0.3.5"
+coil = "2.4.0"
+hilt = "1.2.0"
+compose-material = "1.3.1"
+google-gms = "4.4.1"
+mockk = "1.13.11"
+coroutines-test = "1.8.1"
+core-testing = "2.2.0"
+navigation-common-ktx = "2.7.7"
+maps = "2.11.4"
+gms-map = "18.2.0"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit_converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+http3-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3-interceptor" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger" }
+hilt-view-model = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+ui-constraints = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraints" }
+accompanist-navigation = { group = "com.google.accompanist", name = "accompanist-navigation-material", version.ref = "accompanist" }
+accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
+lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
+kotlinx-coroutines-core = {group= "org.jetbrains.kotlinx", name ="kotlinx-coroutines-core", version.ref = "coroutine"}
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+kotlin-collections-immutable = {group= "org.jetbrains.kotlinx", name ="kotlinx-collections-immutable", version.ref = "collection"}
+androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "compose-material" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines-test" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "core-testing" }
+androidx-navigation-common-ktx = { group = "androidx.navigation", name = "navigation-common-ktx", version.ref = "navigation-common-ktx" }
+maps-android = { group = "com.google.maps.android", name = "maps-compose", version.ref = "maps" }
+android-gms = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "gms-map" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dagger-library = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
+google-gms-services = { id = "com.google.gms.google-services", version.ref = "google-gms" }
+
+[bundles]
+retrofit = ["retrofit", "retrofit-converter", "http3-logging"]
+compose = ["ui", "ui-graphics", "ui-tooling", "ui-tooling-preview", "activity-compose", "ui-constraints"]
+androidx-ui = ["core-ktx", "material3", "appcompat", "material", "accompanist-navigation"]
+testing = ["junit", "kotlinx-coroutines-test", "mockk", "arch-core-testing"]
+android-maps = ["maps-android", "android-gms"]
